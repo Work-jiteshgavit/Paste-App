@@ -11,7 +11,7 @@ function App() {
   const router = createBrowserRouter(
     [
       {
-        path:"/",
+        path:"https://paste-app-khaki.vercel.app/",
         element:
         <div>
         <Navbar/>
@@ -19,7 +19,7 @@ function App() {
         </div>
       },
       {
-        path:"/pastes",
+        path:"https://paste-app-khaki.vercel.app/pastes",
         element:
         <div>
           <Navbar/>
@@ -27,7 +27,7 @@ function App() {
         </div>
       },
       {
-        path:"/pastes/:id",
+        path:"https://paste-app-khaki.vercel.app/pastes/:id",
         element:
         <div>
           <Navbar/>
