@@ -15,7 +15,7 @@ export const pasteSlice = createSlice({
      const index = state.pastes.findIndex((item) => item._id === paste._id)
 
       if (index >= 0) {
-        // If the course is already in the Pastes, do not modify the quantity
+      
         toast.error("Paste already exist", {
           position: "top-right",
         });
