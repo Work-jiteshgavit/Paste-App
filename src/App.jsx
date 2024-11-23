@@ -8,36 +8,45 @@ import ViewPaste from './Components/ViewPaste'
 import { Toaster } from 'react-hot-toast';
 function App() {
  
-  const router = createBrowserRouter(
-    [
-      {
-        path:"/",
-        element:
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
         <div>
-        <Navbar/>
-          <Home/>
+          <Navbar />
+          <Home />
         </div>
-      },
-      {
-        path:"/pastes",
-        element:
+      ),
+    },
+    {
+      path: "/pastes",
+      element: (
         <div>
-          <Navbar/>
-          <Paste/>
+          <Navbar />
+          <Paste />
         </div>
-      },
-      {
-        path:"/pastes/:id",
-        element:
+      ),
+    },
+    {
+      path: "/pastes/:id",
+      element: (
         <div>
-          <Navbar/>
-          <ViewPaste/>
+          <Navbar />
+          <ViewPaste />
         </div>
-      },
-    ]
-  )
-
- 
+      ),
+    },
+    {
+      path: "*",
+      element: (
+        <div>
+          <Navbar />
+          <h1>404 - Page Not Found</h1>
+        </div>
+      ),
+    },
+  ]);
+  
 
   return (
     <div>
